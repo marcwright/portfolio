@@ -26,6 +26,8 @@ a {
 
 img {
   max-width: 100%;
+  /*width: 6em;*/
+  /*height: 6em;*/
 }
 
 #icons li {
@@ -44,8 +46,11 @@ Patterns - reusable parts of our design
 -------------------------------- */
 .cd-btn {
   display: inline-block;
-  padding: 1em 1em;
+  /*padding: 1em 1em;*/
   border-radius: 50em;
+  /*width: 5em;*/
+  height: 6em;
+  max-width: 100%;
   /*background-color: #eebb00;*/
   /*box-shadow: 0 1px 20px rgba(238, 187, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.4);*/
   color: #ffffff;
@@ -155,6 +160,11 @@ Intro page
     transform: translateY(-95%);
   }
 }
+
+.cd-intro-block img {
+  height: 6em;
+}
+
 
 /* -------------------------------- 
 
