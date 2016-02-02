@@ -1,4 +1,8 @@
 jQuery(document).ready(function(){
+
+
+
+	
 	var intro = $('.cd-intro-block'),
 		projectsContainer = $('.cd-projects-wrapper'),
 		projectsSlider = projectsContainer.children('.cd-slider'),
@@ -37,17 +41,18 @@ jQuery(document).ready(function(){
 	});
 
 	//select a single project - open project-content panel
-	projectsContainer.on('click', '.cd-slider a', function(event) {
-		var mq = checkMQ();
-		event.preventDefault();
-		if( $(this).parent('li').next('li').is('.current') && (mq == 'desktop') ) {
-			prevSides(projectsSlider);
-		} else if ( $(this).parent('li').prev('li').prev('li').prev('li').is('.current')  && (mq == 'desktop') ) {
-			nextSides(projectsSlider);
-		} else {
-			singleProjectContent.addClass('is-visible');
-		}
-	});
+projectsContainer.on('click', '.cd-slider a', function(event) {
+event.preventDefault();
+if( jQuery(this).parent('li').next('li').is('.current') ) {
+prevSides(projectsSlider);
+} else if ( jQuery(this).parent('li').prev('li').prev('li').prev('li').is('.current')) {
+nextSides(projectsSlider);
+} else {
+var id= jQuery(this).attr('href');
+//singleProjectContent.addClass('is-visible');
+jQuery(''+id+'').addClass('is-visible');
+}
+});
 
 	//close single project content
 	singleProjectContent.on('click', '.close', function(event){

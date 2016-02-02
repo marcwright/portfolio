@@ -27,6 +27,11 @@ img {
   max-width: 100%;
 }
 
+#icons li {
+  float: left;
+  /*position: relative;*/
+}
+
 /* -------------------------------- 
 
 Patterns - reusable parts of our design
