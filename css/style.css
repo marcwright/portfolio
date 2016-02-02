@@ -13,7 +13,8 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Source Sans Pro", sans-serif;
+  /*font-family: "Source Sans Pro", sans-serif;*/
+  font-family: 'Poiret One', cursive;
   color: #0f1926;
   background-color: #ebebeb;
 }
@@ -32,9 +33,9 @@ img {
   /*position: relative;*/
 }
 
-h1 {
+/*h1 {
   font-family: "Special Elite", sans-serif;
-}
+}*/
 
 /* -------------------------------- 
 
@@ -707,7 +708,20 @@ Project content panel
   -moz-transition-timing-function: cubic-bezier(0.67, 0.15, 0.83, 0.83);
   transition-timing-function: cubic-bezier(0.67, 0.15, 0.83, 0.83);
 }
+
+.cd-project-content img {
+    /*padding-left: 13em;*/
+    padding-top: 2em;
+  }
+
+
 .cd-project-content > div {
+  height: 100%;
+  overflow-y: auto;
+  padding: 4em 2em;
+}
+
+.cd-project-content > img {
   height: 100%;
   overflow-y: auto;
   padding: 4em 2em;

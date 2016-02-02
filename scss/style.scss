@@ -100,7 +100,7 @@ Intro page
 		height: 24px;
 		width: 24px;
 		background: url(../img/cd-arrow-back.svg) no-repeat center center;
-		opacity: 0;
+		opacity: 1;
 		@include transition(opacity .2s);
 	}
 
