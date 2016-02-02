@@ -20,7 +20,7 @@ body {
 }
 
 a {
-  color: #eebb00;
+  /*color: #eebb00;*/
   text-decoration: none;
 }
 
@@ -44,10 +44,10 @@ Patterns - reusable parts of our design
 -------------------------------- */
 .cd-btn {
   display: inline-block;
-  padding: 1.4em 2em;
+  padding: 1em 1em;
   border-radius: 50em;
-  background-color: #eebb00;
-  box-shadow: 0 1px 20px rgba(238, 187, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  /*background-color: #eebb00;*/
+  /*box-shadow: 0 1px 20px rgba(238, 187, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.4);*/
   color: #ffffff;
   font-size: 1.3rem;
   font-weight: bold;
@@ -58,7 +58,7 @@ Patterns - reusable parts of our design
   transition: box-shadow 0.2s;
 }
 .no-touch .cd-btn:hover {
-  box-shadow: 0 1px 30px rgba(238, 187, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  box-shadow: 0 1px 30px rgba(38, 12, 12, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
 .cd-img-replace {
@@ -79,7 +79,7 @@ Intro page
   z-index: 2;
   height: 100vh;
   width: 100%;
-  background-color: #A6A6A6;
+  background-color: white;
   /* used to vertical align its content */
   display: table;
   -webkit-transition: -webkit-transform 0.5s;
@@ -169,7 +169,7 @@ Projects Slider
   width: 100%;
   height: 100%;
   visibility: hidden;
-  background-color: #1F1F1F;
+  background-color: rgba(38, 12, 12, 0.2);
   -webkit-transition: visibility 0s 0.5s;
   -moz-transition: visibility 0s 0.5s;
   transition: visibility 0s 0.5s;
